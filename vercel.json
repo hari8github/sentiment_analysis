@@ -1,18 +1,17 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "sentiment.py",
-            "use": "@vercel/python",
-            "config": {
-                "installCommand": "apt-get update && apt-get install -y python3-distutils && pip3 install --no-cache-dir -r requirements.txt"
-            }
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "sentiment.py"
-        }
-    ]
+  "builds": [
+    {
+      "src": "api/*.py",
+      "use": "@vercel/python",
+      "config": {
+        "runtime": "python3.8.10"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ]
 }
