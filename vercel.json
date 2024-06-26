@@ -4,6 +4,6 @@
         {"src": "sentiment.py", "use": "@vercel/python"}
     ],
     "routes": [
-        {"src": "/(.')", "dest": "sentiment.py"}
+        {"src": "/(.*)", "dest": "sentiment.py"}
     ]
 }
