@@ -1,9 +1,15 @@
 {
-    "version" : 2,
+    "version": 2,
     "builds": [
-        {"src": "sentiment.py", "use": "@vercel/python"}
+        {
+            "src": "app.py",
+            "use": "@vercel/python"
+        }
     ],
     "routes": [
-        {"src": "/(.*)", "dest": "sentiment.py"}
+        {
+            "src": "/(.*)",
+            "dest": "app.py"
+        }
     ]
 }
