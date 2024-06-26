@@ -1,0 +1,17 @@
+body {
+    font-family: 'Arial', 'Arial Narrow Bold', 'sans-serif';
+}
+.custom-file-input {
+    display: none;
+}
+.custom-file-input {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+}
+
+.h2{
+    text-align: center;
+}
