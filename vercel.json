@@ -3,7 +3,10 @@
     "builds": [
         {
             "src": "sentiment.py",
-            "use": "@vercel/python"
+            "use": "@vercel/python",
+            "config": {
+                "installCommand": "apt-get update && apt-get install -y python3-distutils && pip3 install --no-cache-dir -r requirements.txt"
+            }
         }
     ],
     "routes": [
